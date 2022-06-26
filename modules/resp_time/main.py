@@ -1,6 +1,4 @@
-from ast import Break, Continue
 import json
-from pickle import APPEND, EMPTY_LIST
 import requests
 temp_log = []
 
@@ -13,8 +11,8 @@ while True:
     except:
         with open('log.json', 'w') as file_object:  #open the file in write mode
             json.dump(temp_log, file_object)
-        Continue
-    Break
+        continue
+    break
 
 new_data = list(data)
 print(new_data)
